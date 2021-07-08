@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\TDP\Object_1\bin\Debug\net5.0\Object_1.exe
+C:\Users\Admin\Desktop\TDP\Object_1\bin\Debug\net5.0\Object_1.deps.json
+C:\Users\Admin\Desktop\TDP\Object_1\bin\Debug\net5.0\Object_1.runtimeconfig.json
+C:\Users\Admin\Desktop\TDP\Object_1\bin\Debug\net5.0\Object_1.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\TDP\Object_1\bin\Debug\net5.0\Object_1.dll
+C:\Users\Admin\Desktop\TDP\Object_1\bin\Debug\net5.0\ref\Object_1.dll
+C:\Users\Admin\Desktop\TDP\Object_1\bin\Debug\net5.0\Object_1.pdb
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\Object_1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\Object_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\Object_1.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\Object_1.AssemblyInfo.cs
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\Object_1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\Object_1.dll
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\ref\Object_1.dll
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\Object_1.pdb
+C:\Users\Admin\Desktop\TDP\Object_1\obj\Debug\net5.0\Object_1.genruntimeconfig.cache

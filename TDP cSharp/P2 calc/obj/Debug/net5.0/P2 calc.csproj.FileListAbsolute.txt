@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\TDP\P2 calc\bin\Debug\net5.0\P2 calc.exe
+C:\Users\Admin\Desktop\TDP\P2 calc\bin\Debug\net5.0\P2 calc.deps.json
+C:\Users\Admin\Desktop\TDP\P2 calc\bin\Debug\net5.0\P2 calc.runtimeconfig.json
+C:\Users\Admin\Desktop\TDP\P2 calc\bin\Debug\net5.0\P2 calc.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\TDP\P2 calc\bin\Debug\net5.0\P2 calc.dll
+C:\Users\Admin\Desktop\TDP\P2 calc\bin\Debug\net5.0\ref\P2 calc.dll
+C:\Users\Admin\Desktop\TDP\P2 calc\bin\Debug\net5.0\P2 calc.pdb
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\P2 calc.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\P2 calc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\P2 calc.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\P2 calc.AssemblyInfo.cs
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\P2 calc.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\P2 calc.dll
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\ref\P2 calc.dll
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\P2 calc.pdb
+C:\Users\Admin\Desktop\TDP\P2 calc\obj\Debug\net5.0\P2 calc.genruntimeconfig.cache

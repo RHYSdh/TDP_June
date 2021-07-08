@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\for.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\for.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\for.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\for.AssemblyInfo.cs
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\for.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TDP\for\bin\Debug\net5.0\for.exe
+C:\Users\Admin\Desktop\TDP\for\bin\Debug\net5.0\for.deps.json
+C:\Users\Admin\Desktop\TDP\for\bin\Debug\net5.0\for.runtimeconfig.json
+C:\Users\Admin\Desktop\TDP\for\bin\Debug\net5.0\for.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\TDP\for\bin\Debug\net5.0\for.dll
+C:\Users\Admin\Desktop\TDP\for\bin\Debug\net5.0\ref\for.dll
+C:\Users\Admin\Desktop\TDP\for\bin\Debug\net5.0\for.pdb
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\for.dll
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\ref\for.dll
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\for.pdb
+C:\Users\Admin\Desktop\TDP\for\obj\Debug\net5.0\for.genruntimeconfig.cache

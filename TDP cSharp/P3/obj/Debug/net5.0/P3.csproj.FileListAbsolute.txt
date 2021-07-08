@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\TDP\P3\bin\Debug\net5.0\P3.exe
+C:\Users\Admin\Desktop\TDP\P3\bin\Debug\net5.0\P3.deps.json
+C:\Users\Admin\Desktop\TDP\P3\bin\Debug\net5.0\P3.runtimeconfig.json
+C:\Users\Admin\Desktop\TDP\P3\bin\Debug\net5.0\P3.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\TDP\P3\bin\Debug\net5.0\P3.dll
+C:\Users\Admin\Desktop\TDP\P3\bin\Debug\net5.0\ref\P3.dll
+C:\Users\Admin\Desktop\TDP\P3\bin\Debug\net5.0\P3.pdb
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\P3.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\P3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\P3.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\P3.AssemblyInfo.cs
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\P3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\P3.dll
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\ref\P3.dll
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\P3.pdb
+C:\Users\Admin\Desktop\TDP\P3\obj\Debug\net5.0\P3.genruntimeconfig.cache

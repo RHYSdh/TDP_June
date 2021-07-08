@@ -1,0 +1,150 @@
+<html>
+<style>
+    .btnDigit {
+        box-shadow: inset 0px 1px 0px 0px #f9eca0;
+        background: linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+        background-color: #f0c911;
+        border-radius: 6px;
+        border: 1px solid #e65f44;
+        display: inline-block;
+        cursor: pointer;
+        color: #c92200;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px 15px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ded17c;
+    }
+
+    .btnDigit:hover {
+        background: linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+        background-color: #f2ab1e;
+    }
+
+    .btnDigit:active {
+        position: relative;
+        top: 1px;
+    }
+
+    .btnSign {
+        box-shadow: inset 0px 1px 0px 0px #276873;
+        background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+        background-color: #599bb3;
+        border-radius: 6px;
+        border: 1px solid #29668f;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px 15px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #3d768a;
+    }
+
+    .btnSign:hover {
+        background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+        background-color: #408c99;
+    }
+
+    .btnSign:active {
+        position: relative;
+        top: 1px;
+    }
+
+    .result {
+        padding: 6px;
+        font-size: 22px;
+        border-width: 1px;
+        border-color: #CCCCCC;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-style: solid;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+        text-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+    }
+</style>
+
+<body>
+    <table style="text-align: center;">
+        <tr>
+            <td colspan="4"><input type="text" id="display" style="text-align: right;" class="result" disabled></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="digit('7')" class="btnDigit"></td>
+            <td><input type="button" value="8" onclick="digit('8')" class="btnDigit"></td>
+            <td><input type="button" value="9" onclick="digit('9')" class="btnDigit"></td>
+            <td><input type="button" value="C" onclick="clearScreen()" class="btnSign"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="digit('4')" class="btnDigit"></td>
+            <td><input type="button" value="5" onclick="digit('5')" class="btnDigit"></td>
+            <td><input type="button" value="6" onclick="digit('6')" class="btnDigit"></td>
+            <td><input type="button" value="/" onclick="signClick('/')" class="btnSign"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="digit('1')" class="btnDigit"></td>
+            <td><input type="button" value="2" onclick="digit('2')" class="btnDigit"></td>
+            <td><input type="button" value="3" onclick="digit('3')" class="btnDigit"></td>
+            <td><input type="button" value="*" onclick="signClick('*')" class="btnSign"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="digit('0')" class="btnDigit"></td>
+            <td><input type="button" value="=" onclick="result()" class="btnSign"></td>
+            <td><input type="button" value="+" onclick="signClick('+')" class="btnSign"></td>
+            <td><input type="button" value="-" onclick="signClick('-')" class="btnSign"></td>
+        </tr>
+    </table>
+</body>
+<script>
+
+    let ref = document.getElementById('display');
+    let no1 = 0;
+    let operator = "";
+
+    function digit(num) {
+
+        if (num == "0") {
+            if (ref.value != "") {
+                ref.value = ref.value + num;
+            }
+        } else {
+            ref.value = ref.value + num;
+        }
+    }
+
+    function clearScreen() {
+        ref.value = "";
+        no1 = 0;
+        operator = "";
+    }
+
+    function signClick(sign) {
+        operator = sign;
+        no1 = parseInt(ref.value);
+        ref.value = "";
+    }
+
+    function result() {
+        if (operator == "+") {
+            ref.value = no1 + parseInt(ref.value);
+        }
+        else if (operator == "-") {
+            ref.value = no1 - parseInt(ref.value);
+        }
+        else if (operator == "/") {
+            ref.value = no1 / parseInt(ref.value);
+        }
+        else if (operator == "*") {
+            ref.value = no1 * parseInt(ref.value);
+        }
+        else {
+
+        }
+    }
+</script>
+
+</html>

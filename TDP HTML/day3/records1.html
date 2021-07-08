@@ -1,0 +1,114 @@
+<html>
+
+<script>
+
+    let QArecords = [
+        { "regno": 101, "name": "shafeeq", "marks": 100 },
+        { "regno": 102, "name": "ruth", "marks": 50 },
+        { "regno": 103, "name": "peter", "marks": 150 }
+    ];
+
+
+    function showRecords() {
+        for (let i = 0; i < QArecords.length; i++) {
+
+            addRecordToDom(QArecords[i].regno, QArecords[i].name, QArecords[i].marks);
+
+        }
+    }
+
+    function showPassRecords() {
+        for (let i = 0; i < QArecords.length; i++) {
+
+            if (QArecords[i].marks > 50) {
+                addRecordToDom(QArecords[i].regno, QArecords[i].name, QArecords[i].marks);
+
+            }
+        }
+    }
+
+    function addRecord() {
+
+        QArecords.push(
+            {
+                "regno": document.getElementById("regno").value,
+                "name": document.getElementById("name").value,
+                "marks": document.getElementById("marks").value
+            }
+        );
+
+    }
+    let first = 0;
+    function addRecordToDom(regno, name, marks) {
+
+        let spanRecord = document.createElement("table");
+        let spanRow = document.createElement("tr");
+        let spanRegno = document.createElement("td");
+        let spanName = document.createElement("td");
+        let spanMarks = document.createElement("td");
+        let spanPercent = document.createElement("td");
+        let spanPass = document.createElement("td");
+
+        if (first == 0) {
+            spanRegno.innerHTML = "Reg Number";
+            spanName.innerHTML = "Name";
+            spanMarks.innerHTML = "Marks";
+            spanPercent.innerHTML = "Percent";
+            spanPass.innerHTML = "Pass/Fail";
+            first++;
+            spanRecord.id = "myTable";
+            spanRecord.style.textAlign = "center";
+            spanRecord.appendChild(spanRow)
+            spanRecord.appendChild(spanRegno);
+            spanRecord.appendChild(spanName);
+            spanRecord.appendChild(spanMarks);
+            spanRecord.appendChild(spanPercent);
+            spanRecord.appendChild(spanPass);
+            document.body.appendChild(spanRecord);
+            let row = document.getElementById("myTable").insertRow(document.getElementById("myTable").rows.length);
+            let a = row.insertCell(0);
+            a.innerHTML = regno;
+            let b = row.insertCell(1);
+            b.innerHTML = name;
+            let c = row.insertCell(2);
+            c.innerHTML = marks;
+            let d = row.insertCell(3);
+            d.innerHTML = marks / 150 * 100;
+            let e = row.insertCell(4);
+            if (marks / 150 * 100 >= 50) {
+                e.innerHTML = "Pass";
+                e.style.color = "Green";
+            } else {
+                e.innerHTML = "Fail";
+                e.style.color = "Red";
+            }
+        } else {
+            let row = document.getElementById("myTable").insertRow(document.getElementById("myTable").rows.length);
+            let a = row.insertCell(0);
+            a.innerHTML = regno;
+            let b = row.insertCell(1);
+            b.innerHTML = name;
+            let c = row.insertCell(2);
+            c.innerHTML = marks;
+            let d = row.insertCell(3);
+            d.innerHTML = marks / 150 * 100;
+            let e = row.insertCell(4);
+            if (marks / 150 * 100 >= 50) {
+                e.innerHTML = "Pass";
+                e.style.color = "Green";
+            } else {
+                e.innerHTML = "Fail";
+                e.style.color = "Red";
+            }
+        }
+        //alert(document.getElementById("myTable").rows.length);
+    }
+</script>
+
+<input onclick="showRecords()" type="Button" value="show records">
+<input onclick="showPassRecords()" type="Button" value="Passed Students">
+<br><br>
+
+Regno: <input id="regno" type="text"><br>
+Name: <input id="name" type="text"><br>
+Marks: <input id="marks" type="text"> <br> <input onclick="addRecord()" type="Button" value="Add Record"><br><br>

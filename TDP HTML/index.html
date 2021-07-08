@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <!--<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Day 19 training</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>-->
+
+
+    <body onmousemove="logMouse()">
+        
+        
+        <input id="mouse"><br>
+        <b id="myText" style="position: absolute; top:300; left:300;">HELLO</b>
+        
+        Number one: <input type="text" id="first" oninput="this.style.background = '#FFFFFF'"><br>
+        Number two: <input type="text" id="second" oninput="this.style.background = '#FFFFFF'"><br>
+        <input type="button" onclick="sum('+')" value="+">
+        <input type="button" onclick="sum('-')" value="-">
+        <input type="button" onclick="sum('/')" value="/">
+        <input type="button" onclick="sum('*')" value="*"><br>
+        Result is: <input type="text" id="result"><br>
+
+        <br>
+        <br>
+
+        <div id="box" style="height: 200px; width: 200px; border: solid 1px #000000;" onmousemove="mouseMove()" onmouseenter="mouseIn()" onmouseleave="mouseOut()"></div>
+
+        <br><br>
+        
+
+        
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>

@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\payslip.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\payslip.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\payslip.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\payslip.AssemblyInfo.cs
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\payslip.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TDP\payslip\bin\Debug\net5.0\payslip.exe
+C:\Users\Admin\Desktop\TDP\payslip\bin\Debug\net5.0\payslip.deps.json
+C:\Users\Admin\Desktop\TDP\payslip\bin\Debug\net5.0\payslip.runtimeconfig.json
+C:\Users\Admin\Desktop\TDP\payslip\bin\Debug\net5.0\payslip.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\TDP\payslip\bin\Debug\net5.0\payslip.dll
+C:\Users\Admin\Desktop\TDP\payslip\bin\Debug\net5.0\ref\payslip.dll
+C:\Users\Admin\Desktop\TDP\payslip\bin\Debug\net5.0\payslip.pdb
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\payslip.dll
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\ref\payslip.dll
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\payslip.pdb
+C:\Users\Admin\Desktop\TDP\payslip\obj\Debug\net5.0\payslip.genruntimeconfig.cache

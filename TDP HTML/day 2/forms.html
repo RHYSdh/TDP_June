@@ -1,0 +1,105 @@
+<html>
+
+<body>
+
+    <form action="index.html" onsubmit="return check()">
+        Username: <input type="text" id="user" onchange="this.style.background = '#FFFFFF'"><span id="userErr"
+            style="color: #FF0000; visibility: hidden;">*</span><br>
+        Email: <input type="text" id="email" onchange="this.style.background = '#FFFFFF'"><span id="emailErr"
+            style="color: #FF0000; visibility: hidden;">*</span><br>
+        Password: <input type="password" id="pass" onchange="this.style.background = '#FFFFFF'"><span id="passErr"
+            style="color: #FF0000; visibility: hidden;">*</span><br>
+        <input type="submit">
+    </form>
+</body>
+<script>
+    username = document.getElementById('user');
+    password = document.getElementById('pass');
+    email = document.getElementById('email');
+    let userCheck = "";
+    let passCheck = "";
+    let emailCheck = "";
+
+    function check() {
+        let okay = true;
+        document.getElementById("userErr").style.visibility = "hidden";
+        document.getElementById("passErr").style.visibility = "hidden";
+        document.getElementById("emailErr").style.visibility = "hidden";
+
+        if (username.value == "") {
+            username.style.background = "#FF9999";
+            document.getElementById("userErr").style.visibility = "visible";
+            username.focus();
+            okay = false;
+        }
+        if (email.value == "") {
+            email.style.background = "#FF9999";
+            document.getElementById("emailErr").style.visibility = "visible";
+            email.focus();
+            okay = false;
+        }
+        if (password.value == "") {
+            password.style.background = "#FF9999";
+            document.getElementById("passErr").style.visibility = "visible";
+            password.focus();
+            okay = false;
+        }
+
+        if (username.value.length > 10) {
+
+            for (let i = 0; i < username.value.length; i++) {
+                if (username.value.substr(i, 1) == "*" || username.value.substr(i, 1) == " ") {
+
+                    document.getElementById("userErr").innerHTML = "Invalid characters";
+                    document.getElementById("userErr").style.visibility = "visible";
+                    okay = false;
+                    break;
+                }
+            }
+        } else {
+            document.getElementById("userErr").innerHTML = "Not long enough";
+            document.getElementById("userErr").style.visibility = "visible";
+            okay = false;
+        }
+
+        if (email.value.length >= 5) {
+
+
+            if (email.value.includes("@") && email.value.includes(".")) {
+
+                document.getElementById("emailErr").style.visibility = "hidden";
+            } else {
+                document.getElementById("emailErr").innerHTML = "Email must contain '@' & '.'";
+                document.getElementById("emailErr").style.visibility = "visible";
+                okay = false;
+            }
+
+        } else {
+            document.getElementById("emailErr").innerHTML = "Not long enough";
+            document.getElementById("emailErr").style.visibility = "visible";
+            okay = false;
+        }
+
+        if (password.value.length > 5) {
+
+            if (password.value.include("*") || password.value.include(" ") || password.value.include("/")) {
+
+                document.getElementById("passErr").innerHTML = "Invalid characters";
+                document.getElementById("passErr").style.visibility = "visible";
+                okay = false;
+            }
+            else {
+                document.getElementById("passErr").style.visibility = "hidden";
+            }
+
+        } else {
+            document.getElementById("passErr").innerHTML = "Not long enough";
+            document.getElementById("passErr").style.visibility = "visible";
+            okay = false;
+        }
+        return okay;
+    }
+
+</script>
+
+</html>

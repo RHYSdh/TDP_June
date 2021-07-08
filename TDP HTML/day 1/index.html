@@ -1,0 +1,15 @@
+<html>
+    <body onmousemove="what()">
+        <b id="qa" style="position: absolute; top: 0;left: 0;">hello</b>
+    </body>
+<script>
+    let FSize =10;
+    let ref = document.getElementById("qa");
+
+    function what(){
+        ref.style.top=event.clientY + 30;
+        ref.style.left=event.clientX;
+    }
+</script>
+
+</html>

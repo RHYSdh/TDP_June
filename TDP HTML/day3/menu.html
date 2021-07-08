@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+    <div id="Info" style="position: absolute; top:40; left: 0; height: 500; width: 800;"></div>
+
+    <span id="menuOne" style="position:absolute; top: 0; left: 0; height: 40; width: 60;" onmouseover="changeVisible('dropOne','visible')" onmouseout="changeVisible('dropOne','hidden')">Sport
+        <span id="dropOne" style="visibility: hidden;">
+            <div onmouseover="this.style.background='lightblue'" onmouseout="this.style.background='white'" onclick="info('Football sport')">Football
+            </div>
+            <div onmouseover="this.style.background='lightblue'" onmouseout="this.style.background='white'" onclick="info('Cricket sport')">Cricket
+            </div>
+            <div onmouseover="this.style.background='lightblue'" onmouseout="this.style.background='white'" onclick="info('Hockey sport')">Hockey
+            </div>
+        </span>
+    </span>
+    <span id="menuTwo" style="position:absolute; top: 0; left: 60; height: 40; width: 60;" onmouseover="changeVisible('dropTwo','visible')" onmouseout="changeVisible('dropTwo','hidden')">Countries
+        <span id="dropTwo" style="visibility: hidden;">
+            <div onmouseover="this.style.background='lightblue'" onmouseout="this.style.background='white'" onclick="info('England country')">England
+            </div>
+            <div onmouseover="this.style.background='lightblue'" onmouseout="this.style.background='white'" onclick="info('Ireland country')">Ireland
+            </div>
+            <div onmouseover="this.style.background='lightblue'" onmouseout="this.style.background='white'" onclick="info('Scotland country')">Scotland
+            </div>
+            <div onmouseover="this.style.background='lightblue'" onmouseout="this.style.background='white'" onclick="info('Wales country')">Wales
+            </div>
+        </span>
+    </span>
+
+    
+    </body>
+
+    <script>
+        function changeVisible(element,value){
+            document.getElementById(element).style.visibility=value;
+        }
+
+        function info(string){
+            document.getElementById("Info").innerHTML = string;
+        }
+
+    </script>
+
+</html>

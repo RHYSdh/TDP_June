@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\TDP\day14\bin\Debug\net5.0\day14.exe
+C:\Users\Admin\Desktop\TDP\day14\bin\Debug\net5.0\day14.deps.json
+C:\Users\Admin\Desktop\TDP\day14\bin\Debug\net5.0\day14.runtimeconfig.json
+C:\Users\Admin\Desktop\TDP\day14\bin\Debug\net5.0\day14.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\TDP\day14\bin\Debug\net5.0\day14.dll
+C:\Users\Admin\Desktop\TDP\day14\bin\Debug\net5.0\ref\day14.dll
+C:\Users\Admin\Desktop\TDP\day14\bin\Debug\net5.0\day14.pdb
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\day14.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\day14.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\day14.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\day14.AssemblyInfo.cs
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\day14.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\day14.dll
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\ref\day14.dll
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\day14.pdb
+C:\Users\Admin\Desktop\TDP\day14\obj\Debug\net5.0\day14.genruntimeconfig.cache

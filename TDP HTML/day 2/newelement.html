@@ -1,0 +1,19 @@
+<html>
+
+<script>
+    let i=1;
+    function doSomething(){
+        
+        let ref = document.createElement("input");
+        ref.type = "button";
+        ref.value = "click"+i;
+        ref.onclick = function(){
+            alert("hello");
+        }
+        document.body.appendChild(ref);
+        i++;
+    }
+</script>
+
+<input type="button" value="?" onclick="doSomething()">
+</html>

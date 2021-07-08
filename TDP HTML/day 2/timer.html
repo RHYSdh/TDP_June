@@ -1,0 +1,24 @@
+<html>
+
+
+<input type="text" value="0" id="timer">
+<input type="button" value="Start" onclick="start()">
+<input type="button" value="Stop" onclick="stop()">
+
+<script>
+    let time;
+    let timer = document.getElementById("timer");
+    
+    function start(){
+        time = setInterval(count,10);
+    }
+
+    function stop(){
+        clearInterval(time);
+    }
+
+    function count(){
+        timer.value++;
+    }
+</script>
+</html>

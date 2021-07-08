@@ -1,0 +1,56 @@
+<html>
+
+<body>
+<input type="text" id="message"><br>
+<input type="button" value="Uppercase" onclick="check(65,90)">
+<input type="button" value="Lowercase" onclick="check(97,122)">
+<input type="button" value="Digits" onclick="check(48,57)">
+<input type="button" value="Special characters" onclick="special()"><br>
+<input type="radio" name="choice" id="upper"><label for="upper">Uppercase</label>
+<input type="radio" name="choice" id="lower"><label for="lower">Lowercase</label>
+<input type="radio" name="choice" id="digits"><label for="digits">Digits</label>
+<input type="radio" name="choice" id="special"><label for="special">Special</label>
+<input type="button" value="Check" onclick="checkRadio()"><br>
+<input type="text" id="newmessage">
+
+</body>
+
+<script>
+    let message = document.getElementById("message");
+    let newmessage = document.getElementById("newmessage");
+
+    function checkRadio(){
+        if(document.getElementById("upper").checked){
+            check(65,90);
+        }
+        if(document.getElementById("lower").checked){
+            check(97,122);
+        }
+        if(document.getElementById("digits").checked){
+            check(48,57);
+        }
+        if(document.getElementById("special").checked){
+            special();
+        }
+    }
+
+    function check(a,b){
+        newmessage.value = "";
+        for(let i = 0; i < message.value.length; i++){
+            if(message.value.charCodeAt(i) >= a && message.value.charCodeAt(i) <= b){
+                newmessage.value += message.value.substr(i,1);
+            }
+        }
+    }
+
+    function special(){
+        newmessage.value = "";
+        for(let i = 0; i < message.value.length; i++){
+            if(message.value.charCodeAt(i) >= 33 && message.value.charCodeAt(i) <= 47 || message.value.charCodeAt(i) >= 58 && message.value.charCodeAt(i) <= 64 || message.value.charCodeAt(i) >= 91 && message.value.charCodeAt(i) <= 96 || message.value.charCodeAt(i) >= 123 && message.value.charCodeAt(i) <= 126){
+                newmessage.value += message.value.substr(i,1);
+            }
+        }
+    }
+
+</script>
+</html>

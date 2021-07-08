@@ -1,0 +1,79 @@
+<html>
+
+<body onkeydown="what()" onload="start()" style="height: 100%; overflow: hidden;">
+    <div style="height: 650; width: 1000; background-color: wheat; text-align: right; font-size: 700; font-weight: 800; color: rgba(253, 237, 207, 0.911);" id="score">00</div>"
+    <span style="position: absolute; top:600; left:300;" id="sp">
+        <img src="football.jpg" width="50px" height="50px">
+    </span>
+    <div style="width: 70px; height:30px; background-color: crimson; position: absolute; top:100; left:100; color: white; font-size: 25; text-align: center; font-weight: bold;" id="brick">5</div>
+    
+
+</body>
+
+<script>
+    let ref = document.getElementById("sp");
+    let score = document.getElementById("score");
+    let brick = document.getElementById("brick");
+    let random1 = Math.floor(Math.random()*930);
+    let random2 = Math.floor(Math.random()*200+50);
+
+    function what() {
+
+        if (event.keyCode == 37) { //left
+            ref.style.left = parseInt(ref.style.left) - 20;
+        }
+    //    if (event.keyCode == 38) { //up
+    //        ref.style.top = parseInt(ref.style.top) - 20;
+    //    }
+        if (event.keyCode == 39) { //right
+            ref.style.left = parseInt(ref.style.left) + 20;
+        }
+    //    if (event.keyCode == 40) { //down
+    //        ref.style.top = parseInt(ref.style.top) + 20;
+    //    }
+        if (event.keyCode == 32) { //space
+            let newElement = document.createElement("span");
+            newElement.innerHTML = '<img src="football.jpg" width="50px" height="50px">';
+            newElement.style = "position:absolute;";
+            newElement.style.top = ref.style.top;
+            newElement.style.left = ref.style.left;
+            document.body.appendChild(newElement);
+
+            let timer1 = setInterval(function () {
+                newElement.style.top = parseInt(newElement.style.top) - 20;
+                if (parseInt(newElement.style.top) <= -100) {
+                    clearInterval(timer1);
+                    score.innerHTML = parseInt(score.innerHTML) - 5;
+                }
+
+                if (parseInt(newElement.style.top) <= random2 && parseInt(newElement.style.left) >= random1-30 && parseInt(newElement.style.left) <= random1+30) {
+                    clearInterval(timer1);
+                    score.innerHTML = parseInt(score.innerHTML) + 1;
+                    newElement.style.visibility = "hidden";
+                }
+            }, 10);
+        }
+    }
+
+    function start(){
+        let counter = 5;
+        brick.innerHTML = counter;
+        counter = 4;
+        random1 = Math.floor(Math.random()*930);
+        random2 = Math.floor(Math.random()*200+50);
+
+        brick.style.left = random1;
+        brick.style.top = random2;
+        
+        let timer2 = setInterval(function(){
+            brick.innerHTML = counter;
+                if(counter == 0){
+                clearInterval(timer2);
+                start();
+            }
+            counter--;
+        }, 750)
+    }
+</script>
+
+</html>
