@@ -1,0 +1,60 @@
+<html>
+
+<form>
+    <input type="text"><span></span><br>
+    <input type="text"><span></span><br>
+    <input type="text"><span></span><br>
+    <input type="text"><span></span><br>
+    <input type="text"><span></span><br>
+    <input type="button" onclick="checkEmpty1()" value="Check 1 with span">
+</form>
+
+
+<form>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="button" onclick="checkEmpty2()" value="Check 2 without tagName + Span">
+</form>
+
+
+<script>
+
+    function checkEmpty1() {
+
+        for (let i = 0; i < document.forms[0].elements.length; i++) {
+
+            if (document.forms[0].elements[i].type == "text") {
+                document.forms[0].getElementsByTagName("span")[i].innerHTML = "";
+            }
+
+            if (document.forms[0].elements[i].value == "" && document.forms[0].elements[i].type == "text") {
+                document.forms[0].getElementsByTagName("span")[i].innerHTML = "**";
+                document.forms[0].getElementsByTagName("span")[i].style.color = "red";
+            }
+        }
+    }
+
+    function checkEmpty2() {
+        for (let i = 0; i < document.forms[1].elements.length; i++) {
+
+            if (document.forms[1].elements[i].nextSibling.id == "error") {
+                document.forms[1].elements[i].nextSibling.remove("span");
+            }
+
+            if (document.forms[1].elements[i].value == "" && document.forms[1].elements[i].type == "text") {
+                let error = document.createElement("span");
+                error.innerHTML = "**";
+                error.style.color = "red";
+                error.id = "error";
+                document.forms[1].insertBefore(error, document.forms[1].elements[i].nextSibling);
+            }
+            
+        }
+
+    }
+</script>
+
+</html>

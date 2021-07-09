@@ -1,0 +1,50 @@
+<html>
+
+<div id="myDiv"></div>
+
+<form>
+    <input type="text">
+    <input type="button" onclick="labelForm()" value="Label">
+</form>
+
+<form>
+    <input type="text">
+    <input type="button" onclick="listElements()" value="List">
+</form>
+
+<form>
+    <input type="text">
+    <input type="button" onclick="newElement()" value="New Element">
+</form>
+
+<script>
+    function newElement(){
+        document.getElementById("myDiv").innerHTML= "<form> <input type='text'> <input type='button' value='im new' onclick='newFunc()'> </form>";
+        document.forms[0].elements[0].value = "Form 0";
+        document.forms[1].elements[0].value = "Form 1";
+        document.forms[2].elements[0].value = "Form 2";
+        document.forms[3].elements[0].value = "Form 3";
+    }
+
+    function labelForm(){
+        document.forms[0].elements[0].value = "Form 0";
+        document.forms[1].elements[0].value = "Form 1";
+        document.forms[2].elements[0].value = "Form 2";
+    }
+
+    function newFunc(){
+        document.getElementsByTagName("div")[0].innerHTML = "";
+    }
+
+    function listElements(){
+        console.log("Elements:");
+        for(let i = 0; i < document.forms.length; i++){
+            console.log("Form "+i);
+            for(let x = 0; x < document.forms[i].elements.length; x++){
+                console.log(document.forms[i].elements[x].type);
+            }
+        }
+    }
+</script>
+
+</html>

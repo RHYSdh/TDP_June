@@ -1,0 +1,99 @@
+<html>
+
+<body>
+    <input type="text" id="myinput"><br>
+    <input type="button" value="Remove Dupes" onclick="remDupes2()"><br>
+    <input type="text" id="myoutput">
+</body>
+
+<script>
+    let inputtext = document.getElementById("myinput");
+    let outputtext = document.getElementById("myoutput");
+    function RemoveDupes() {
+
+        let newOutput = "";
+        let word = "";
+
+        for (let i = 0; i < inputtext.value.length; i++) {
+
+            if (inputtext.value.substr(i, 1) == " ") {
+
+                if (!(newOutput.includes(word))) {
+
+                    newOutput += word + " ";
+                }
+                word = "";
+            }
+            else {
+                word += inputtext.value.substr(i, 1);
+                console.log(word);
+            }
+        }
+        if (!(newOutput.includes(word))) {
+            newOutput += word;
+        }
+        outputtext.value = newOutput;
+    }
+
+    let wordArray = [];
+
+    function remDupes() {
+
+        let toCheck = inputtext.value + " ";
+        wordArray = [];
+        let newOutput = "";
+        let word = "";
+
+        for (let i = 0; i < toCheck.length; i++) {
+
+            if (toCheck.substr(i, 1) == " ") {
+
+                if (checkWord(word) == false) {
+
+                    newOutput += word + " ";
+                }
+                word = "";
+            }
+            else {
+                word += toCheck.substr(i, 1);
+            }
+        }
+        outputtext.value = newOutput;
+
+    }
+
+    function checkWord(word) {
+
+        for (let i = 0; i < wordArray.length; i++) {
+            if (word == wordArray[i]) {
+                return true;
+            }
+        }
+        wordArray.push(word);
+        return false;
+    }
+
+    function remDupes2() {
+
+        let toCheck = inputtext.value + " ";
+        wordArray = [];
+        let word = "";
+
+        for (let i = 0; i < toCheck.length; i++) {
+
+            if (toCheck.substr(i, 1) == " ") {
+
+                checkWord(word);
+                word = "";
+            }
+            else {
+                word += toCheck.substr(i, 1);
+            }
+        }
+        outputtext.value = wordArray.toString();
+
+    }
+
+</script>
+
+</html>
